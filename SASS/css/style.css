@@ -1,0 +1,68 @@
+img {
+  height: 120px;
+}
+
+html {
+  font-family: roboto;
+}
+
+.container {
+  margin: 20px;
+}
+
+header {
+  width: 40%;
+  height: auto;
+}
+
+header img {
+  height: 20px;
+}
+
+#presentation {
+  background-color: #c7c2c2;
+}
+
+#presentation #localisation {
+  height: 30px;
+  background-color: grey;
+  font-size: 1em;
+}
+
+#presentation p {
+  font-size: 0.8em;
+}
+
+#presentation h1 {
+  font-size: 1em;
+}
+
+footer {
+  background-color: #646262;
+  height: auto;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer img {
+  height: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  color: white;
+  font-size: 0.8em;
+  padding-top: 4px;
+}
+
+footer a {
+  text-decoration: none;
+  font-style: normal;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
