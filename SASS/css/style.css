@@ -1,4 +1,3 @@
-/*variable */
 html {
   font-family: roboto;
 }
@@ -204,6 +203,8 @@ article {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 article h2 {
@@ -218,6 +219,13 @@ article figure {
 
 article figure a {
   text-decoration: none;
+}
+
+article #couper {
+  position: -webkit-sticky;
+  position: sticky;
+  clip: rect(20px);
+  overflow: hidden;
 }
 
 article img {
@@ -349,5 +357,43 @@ footer a {
   text-decoration: none;
   font-style: normal;
   color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: auto;
+    max-width: 750px;
+  }
+  #restaurants {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  article {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #presentation {
+    width: 750px;
+    font-size: 1.2em;
+  }
+  #fonctionnement {
+    width: 350px;
+    font-size: 1.1em;
+  }
+  #logo img {
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #logo img footer {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
