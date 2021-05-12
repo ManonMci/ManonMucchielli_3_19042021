@@ -1,3 +1,8 @@
+p, ul, nav, figure {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: roboto;
 }
@@ -72,7 +77,6 @@ header img {
 }
 
 #presentation h1 {
-  margin-bottom: 0px;
   font-size: 1.2em;
 }
 
@@ -94,8 +98,10 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 0.8em;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   -webkit-box-shadow: 3px 3px 3px #cecece;
           box-shadow: 3px 3px 3px #cecece;
 }
@@ -113,12 +119,13 @@ header img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #fonctionnement h2 {
   font-size: 1.2em;
   font-weight: bolder;
-  padding-left: 40px;
 }
 
 #fonctionnement nav {
@@ -126,7 +133,7 @@ header img {
 }
 
 #fonctionnement ul {
-  width: 80%;
+  width: 100%;
 }
 
 #fonctionnement .symbole {
@@ -203,43 +210,41 @@ article {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 article h2 {
   font-size: 1.2em;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding-top: 25px;
+  padding-left: 10px;
 }
 
 article figure {
+  width: 96%;
   margin-top: -4px;
+  margin-bottom: 20px;
+  margin: 10px;
 }
 
 article figure a {
   text-decoration: none;
-}
-
-article #couper {
-  position: -webkit-sticky;
-  position: sticky;
-  clip: rect(20px);
-  overflow: hidden;
+  width: 100%;
 }
 
 article img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 110px;
-  width: 200px;
+  height: 140px;
+  width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 article .nouveau {
   background-color: #99E2D0;
   color: #419374;
   border: 1px solid #99E2D0;
-  width: 60px;
+  width: 20%;
   height: 20px;
   font-size: 0.7em;
   display: -webkit-box;
@@ -251,6 +256,9 @@ article .nouveau {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 180px;
 }
 
 figcaption {
@@ -258,8 +266,8 @@ figcaption {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: white;
-  width: 200px;
-  height: 45px;
+  width: 100%;
+  height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +276,7 @@ figcaption {
           justify-content: space-between;
   -webkit-box-shadow: 4px 2px 2px #eaeaea;
           box-shadow: 4px 2px 2px #eaeaea;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 
 figcaption h3 {
@@ -293,7 +301,8 @@ figcaption .description2 {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-left: 10px;
-  margin-top: -10px;
+  margin-top: -3px;
+  margin-bottom: 5px;
 }
 
 figcaption .coeur {
@@ -309,9 +318,14 @@ figcaption .coeur {
   margin-right: 10px;
 }
 
+figcaption .plein {
+  display: none;
+  opacity: 0.5;
+}
+
 footer {
   background-color: #353535;
-  height: auto;
+  height: 150px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,7 +350,7 @@ footer img {
 footer ul {
   list-style: none;
   margin-top: 10px;
-  margin-left: -20px;
+  margin-left: 20px;
 }
 
 footer li {
@@ -359,7 +373,96 @@ footer a {
   color: white;
 }
 
+/* Web */
 @media screen and (min-width: 1024px) {
+  .container {
+    margin: auto;
+    max-width: 950px;
+  }
+  #restaurants {
+    margin-top: 0px;
+    height: 600px;
+  }
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 600px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  article figure {
+    width: 35%;
+    margin: 30px;
+  }
+  article h2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70px;
+  }
+  header {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #presentation {
+    width: 950px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 2px #eaeaea;
+            box-shadow: 2px 2px 2px #eaeaea;
+  }
+  #localisation {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #fonctionnement {
+    width: 350px;
+    font-size: 1.1em;
+  }
+  #fonctionnement h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #fonctionnement ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #logo img {
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #logo img footer {
+    font-size: 1.5em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #logo img ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* Tablette */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
     margin: auto;
     max-width: 750px;
@@ -372,6 +475,8 @@ footer a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   header {
     width: 100%;
@@ -382,6 +487,13 @@ footer a {
   #presentation {
     width: 750px;
     font-size: 1.2em;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 2px #eaeaea;
+            box-shadow: 2px 2px 2px #eaeaea;
+  }
+  #localisation {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   #fonctionnement {
     width: 350px;
