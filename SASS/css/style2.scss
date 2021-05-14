@@ -1,6 +1,139 @@
-#menu{
+$color-light:rgb(246,246,246);
+$color-medium:rgb(234,234,234);
+$color-dark:rgb(53, 53, 53);
 
-    background-color:grey;
+p, ul, nav,figure{
+    margin:0;
+    padding:0;
+  }
+  html {
+    font-family: roboto;
+    body{
+      margin:0;
+    }
+  }
+
+  header{
+      width:100%;
+      object-fit:cover;
+      overflow:hidden;
+    #barre-retour{
+    display:flex;
     width:100%;
-    height:600px;
+    margin-top:20px;
+    margin-bottom:20px;
+    align-items:center;
+    justify-content:center;
+    }
+    img{
+        width:100%;
+        height:200px;
+        object-fit: cover;
+        
+    }
+    #logo img{
+      width:200px;
+      height:20px;
+      object-fit:contain;
+    }
+  }
+
+  main{
+    height:1400px;
+  }
+
+#menu{
+    background-color:$color-light;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    width:100%;
+
+    #titre{
+        width:100%;
+        background-color:$color-light;
+        display:flex;
+        font-family:"shrikhand", cursive;
+        font-size:1.2em;
+        border-top-left-radius: 20px;
+        border-top-right-radius:20px;
+        position:absolute;
+        margin-top:-20px;
+    }
+
+    h1{
+      margin-right:10px;
+      margin-left:10px;
+    }
+
+    article{
+        width:100%;
+        
+        #entrées{
+            width:100%;
+            border-bottom:3px solid;
+            
+        }
+        .description{
+            width:100%;
+            border-radius:20px;
+            background-color: white;
+            margin-left:20px;
+        }
+    }
+}
+#commander {
+
+  p{ 
+ border:1px solid rgb(225,89,217);
+ border-radius:20px;
+ background: linear-gradient($secondaire,$primaire);
+ color:white;
+ width:175px;
+ height:35px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:0.8em;
+ margin-top:25px;
+ margin-bottom:15px;
+ padding-right:10px;
+ padding-left:10px;
+ box-shadow:3px 3px 3px rgb(206, 206, 206);
+}
+}
+
+footer{
+    background-color:$color-dark;
+    height:150px;
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column;
+    img{
+        height:13px;
+        filter: invert(100%);
+        margin-top:20px;
+        margin-left:20px;
+    }
+    ul{
+        list-style: none;
+        margin-top:10px;
+        margin-left:20px;
+        
+    }
+      li{
+        color:white;
+        font-size:0.8em;
+        padding-top:7px;
+        display:flex;
+      }
+        .symbole2{
+          font-size:0.8em;
+          margin-right:8px;
+        }
+        a{
+          text-decoration:none;
+          font-style:normal;
+          color:white;
+        }
 }
