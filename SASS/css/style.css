@@ -29,10 +29,12 @@ header #logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: auto;
 }
 
 header img {
   width: 150px;
+  height: auto;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -223,6 +225,7 @@ article figure {
   margin-top: -4px;
   margin-bottom: 20px;
   margin: 10px;
+  position: relative;
 }
 
 article figure a {
@@ -257,8 +260,8 @@ article .nouveau {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin-top: -130px;
-  margin-left: 180px;
+  top: 1rem;
+  right: 2rem;
 }
 
 figcaption {
@@ -325,7 +328,6 @@ figcaption .plein {
 
 footer {
   background-color: #353535;
-  height: 150px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,34 +381,25 @@ footer a {
     margin: auto;
     max-width: 950px;
   }
-  #restaurants {
-    margin-top: 0px;
-    height: 600px;
-  }
   article {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    height: 600px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  article figure {
-    width: 35%;
-    margin: 30px;
-  }
-  article h2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 70px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  article figure {
+    width: 450px;
+  }
+  article h2 {
+    width: 80%;
+    margin: 0;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
   }
   header {
     width: 100%;
@@ -426,13 +419,16 @@ footer a {
     border-top-right-radius: 20px;
   }
   #fonctionnement {
-    width: 350px;
+    width: 100%;
     font-size: 1.1em;
   }
+  #fonctionnement nav {
+    margin: 15px;
+  }
   #fonctionnement h2 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
   }
   #fonctionnement ul {
     -webkit-box-orient: horizontal;
@@ -442,22 +438,41 @@ footer a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  #fonctionnement li {
+    margin-right: 20px;
   }
   #logo img {
     width: 200px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  #logo img footer {
-    font-size: 1.5em;
+  footer {
+    font-size: 1.1em;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #logo img ul {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  footer img {
+    height: 25px;
+    position: relative;
+    right: 20rem;
+    top: 0.8em;
+  }
+  footer ul {
+    margin-bottom: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -200px;
+    margin-top: -15px;
+  }
+  footer li {
+    margin-right: 20px;
   }
 }
 
@@ -466,6 +481,35 @@ footer a {
   .container {
     margin: auto;
     max-width: 750px;
+  }
+  #fonctionnement {
+    width: 100%;
+    font-size: 1.1em;
+  }
+  #fonctionnement nav {
+    margin: 15px;
+  }
+  #fonctionnement h2 {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  #fonctionnement ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  #fonctionnement li {
+    margin-right: 20px;
+    width: 100%;
   }
   #restaurants {
     -ms-flex-line-pack: center;
@@ -495,17 +539,25 @@ footer a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
-  #fonctionnement {
-    width: 350px;
-    font-size: 1.1em;
-  }
   #logo img {
     width: 200px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  #logo img footer {
-    font-size: 1.5em;
+  footer {
+    font-size: 1.1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer img {
+    height: 20px;
+  }
+  footer ul {
+    margin-bottom: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

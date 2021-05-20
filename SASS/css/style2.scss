@@ -1,117 +1,202 @@
 $color-light:rgb(246,246,246);
 $color-medium:rgb(234,234,234);
 $color-dark:rgb(53, 53, 53);
+$primaire:#9356D0;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
 
-
-p, ul, nav,figure{
+p, ul, nav, figure{
     margin:0;
     padding:0;
-  }
-  html {
+}
+html {
     font-family: roboto;
     body{
       margin:0;
+    .container{
+        max-width:1250px;
+        background-color:#f6f6f6 ;
     }
-  }
-
+    }
+}
   header{
       width:100%;
       object-fit:cover;
       overflow:hidden;
     #barre-retour{
-    display:flex;
-    width:100%;
-    margin-top:20px;
-    margin-bottom:20px;
-    align-items:center;
-    justify-content:center;
+        display:flex;
+        width:100%;
+        margin-top:20px;
+        margin-bottom:20px;
+        align-items:center;
+        justify-content:center;
     }
     img{
         width:100%;
-        height:200px;
+        height:300px;
         object-fit: cover;
-        
     }
     #logo img{
-      width:200px;
-      height:20px;
-      object-fit:contain;
+        width:200px;
+        height:auto;
+        object-fit:contain;
+        border-top:white;
     }
+}
+a{
+    width:20px;
+    display:flex;
+    align-items:center;
+    color:black;
   }
-
-  main{
-    height:1400px;
-  }
-
 #menu{
     background-color:$color-light;
-    border-top-left-radius:30px;
-    border-top-right-radius:30px;
     width:100%;
-
     #titre{
-        width:100%;
         background-color:$color-light;
         display:flex;
         font-family:"shrikhand", cursive;
-        font-size:1.2em;
+        font-size:1.1em;
         border-top-left-radius: 20px;
         border-top-right-radius:20px;
         position:absolute;
-        margin-top:-20px;
-    }
-
-    h1{
-      margin-right:10px;
-      margin-left:10px;
-    }
-
-    article{
+        margin-top:-80px;
         width:100%;
         
-        #entrées{
+        h1{
             width:100%;
-            border-bottom:3px solid;
-            
+            margin-left:10px;
+        }
+        #coeur{
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            width:10px;
+        }
+            .plein{
+            display:none;
+            opacity:0.5;
+            }
+    }
+    article{
+        width:100%;
+        #entrées{
+            width:90%;
+            margin:13px;
+            padding-top:5px;
+            height:420px;
+                h2{
+                    font-size:1.2em;
+                    border-bottom:2px solid #99E2D0;
+                    color:rgb(92,92,92);
+                    width:50px;
+                }
+        }
+        #plats{
+            width:90%;
+            margin:13px;
+            height:320px;
+                h2{
+                    font-size:1.2em;
+                    border-bottom:2px solid #99E2D0; ;
+                    color:rgb(92,92,92);
+                    width:50px;
+                }
+        }
+        #desserts{
+            margin:13px;
+            width:90%;
+            height:320px;
+                h2{
+                    font-size:1.2em;
+                    margin:5px;
+                    border-bottom:2px solid #99E2D0;
+                    color:rgb(92,92,92);
+                    width:50px;
+                }
         }
         .description{
             width:100%;
+            height:75px;
             border-radius:20px;
             background-color: white;
-            margin-left:20px;
+            box-shadow:2px 2px 2px #e6e3e3;
+            display:flex;
+            flex-direction:column;
+            margin-top:10px;
+            padding-left:10px;
+
+                h3{
+                    margin:0px;
+                    margin-top:15px;
+                    margin-bottom:0px;
+                    font-size:1.1em;
+                    font-weight:bold;
+                }
+                p{
+                    font-size:0.95em;
+                    font-weight:lighter;
+                    padding-right:30px;
+                }
+
+        }
+        .prix{
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            height:30px;
+            width:100%;
+            margin-top:-23px;
+                p{
+                    padding-right:20px;
+                    font-weight:bold;
+                    font-size:1em;
+                }
+          }
+        .bouton-valide{
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            margin-top:-40px;
+            margin-right:20px;
+            font-size:1.3em;
+            display:none;
         }
     }
 }
 #commander {
+    height:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:60px;
 
-  p{ 
- border:1px solid rgb(225,89,217);
- border-radius:20px;
- background: linear-gradient($secondaire,$primaire);
- color:white;
- width:175px;
- height:35px;
- display:flex;
- align-items:center;
- justify-content:center;
- font-size:0.8em;
- margin-top:25px;
- margin-bottom:15px;
- padding-right:10px;
- padding-left:10px;
- box-shadow:3px 3px 3px rgb(206, 206, 206);
-}
-}
-
-footer{
-    background-color:$color-dark;
-    height:150px;
+    p{ 
+      border:1px solid rgb(225,89,217);
+      border-radius:20px;
+      background: linear-gradient($secondaire,$primaire);
+      color:white;
+      width:30%;
+      height:45px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1em;
+      margin-top:25px;
+      margin-bottom:15px;
+      padding-right:10px;
+      padding-left:10px;
+      box-shadow:3px 3px 3px rgb(206, 206, 206);
+    }
+  }
+  footer{
+    background-color:#353535;
     width:100%;
     display:flex;
     align-items:flex-start;
     flex-direction:column;
     img{
-        height:13px;
+        height:23px;
         filter: invert(100%);
         margin-top:20px;
         margin-left:20px;
@@ -120,11 +205,10 @@ footer{
         list-style: none;
         margin-top:10px;
         margin-left:20px;
-        
     }
       li{
         color:white;
-        font-size:0.8em;
+        font-size:1.1em;
         padding-top:7px;
         display:flex;
       }
@@ -138,3 +222,112 @@ footer{
           color:white;
         }
 }
+ 
+  /* Web */
+  @media screen and (min-width: 1024px) {
+    .container{
+      max-width:1250px;
+      margin:auto;
+    }
+    #menu {
+      article{
+        margin:15px;
+        display:flex;
+       
+        .description{
+          width:95%;
+          margin-top:15px;
+        }
+
+        #entrées{
+          width:100%;
+          margin:0;
+          padding:0;
+          margin-right:20px;
+        }
+
+        #plats{
+          width:100%;
+          margin:0;
+          margin-right:10px;
+        }
+
+        #desserts{
+          width:100%;
+          margin:23px;
+          margin-left:8px;
+
+          h2{
+            margin:0px;
+            margin-top:-10px;
+          }
+        }
+      }
+      #titre{
+      h1{
+        margin-left:20px;
+        width:1250px;
+      }
+    }
+        #desserts h2{
+          margin:0px;
+        }
+      }  
+
+      #commander{
+        margin-bottom:80px;
+        margin-top:-20px;
+      }
+      #commander p{
+        font-size:1.1em;
+        width:20%;
+      }
+    footer{
+      align-items:center;
+      flex-direction:row;
+    }
+
+    footer img{
+      height:25px;
+      margin-left:140px;
+      margin-top:1px;
+    }
+    footer ul{
+      display:flex;
+      margin-left:130px;
+      margin-top:40px;
+      height:50px;
+      margin-bottom:20px;
+    }
+    footer li{
+      display:flex;
+      justify-content:center;
+      margin-right:40px;
+    }
+    footer a{
+      display:flex;
+      justify-content:center;
+    }
+  }
+  /* Tablette */
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+  
+article{
+  margin:30px;
+}
+#menu h1{
+  margin-left:45px;
+ }
+footer{
+  align-items:center;
+}
+footer li{
+  display:flex;
+  justify-content:center;
+}
+footer a{
+  display:flex;
+  justify-content:center;
+}
+  }
+
