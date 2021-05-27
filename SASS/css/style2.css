@@ -65,12 +65,7 @@ a {
   color: black;
 }
 
-#menu {
-  background-color: #f6f6f6;
-  width: 100%;
-}
-
-#menu #titre {
+header #titre {
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,12 +79,12 @@ a {
   width: 100%;
 }
 
-#menu #titre h1 {
+header #titre h1 {
   width: 100%;
   margin-left: 10px;
 }
 
-#menu #titre #coeur {
+header #titre #coeur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,50 +96,54 @@ a {
           align-items: center;
   width: 10px;
 }
-
-#menu #titre .plein {
+header #titre .plein {
   display: none;
   opacity: 0.5;
 }
 
-#menu article {
+#menu {
+  background-color: #f6f6f6;
   width: 100%;
 }
 
-#menu article #entrées {
+article {
+  width: 100%;
+}
+
+article #entrées {
   width: 90%;
   margin: 13px;
   padding-top: 5px;
   height: 420px;
 }
 
-#menu article #entrées h2 {
+article #entrées h2 {
   font-size: 1.2em;
   border-bottom: 2px solid #99E2D0;
   color: #5c5c5c;
   width: 50px;
 }
 
-#menu article #plats {
+article #plats {
   width: 90%;
   margin: 13px;
   height: 320px;
 }
 
-#menu article #plats h2 {
+article #plats h2 {
   font-size: 1.2em;
   border-bottom: 2px solid #99E2D0;
   color: #5c5c5c;
   width: 50px;
 }
 
-#menu article #desserts {
+article #desserts {
   margin: 13px;
   width: 90%;
   height: 320px;
 }
 
-#menu article #desserts h2 {
+article #desserts h2 {
   font-size: 1.2em;
   margin: 5px;
   border-bottom: 2px solid #99E2D0;
@@ -152,7 +151,7 @@ a {
   width: 50px;
 }
 
-#menu article .description {
+article .description {
   width: 100%;
   height: 75px;
   border-radius: 20px;
@@ -170,7 +169,7 @@ a {
   padding-left: 10px;
 }
 
-#menu article .description h3 {
+article .description h3 {
   margin: 0px;
   margin-top: 15px;
   margin-bottom: 0px;
@@ -178,13 +177,13 @@ a {
   font-weight: bold;
 }
 
-#menu article .description p {
+article .description p {
   font-size: 0.95em;
   font-weight: lighter;
   padding-right: 30px;
 }
 
-#menu article .prix {
+article .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,13 +198,13 @@ a {
   margin-top: -23px;
 }
 
-#menu article .prix p {
+article .prix p {
   padding-right: 20px;
   font-weight: bold;
   font-size: 1em;
 }
 
-#menu article .bouton-valide {
+article .bouton-valide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,6 +315,10 @@ footer a {
     max-width: 1250px;
     margin: auto;
   }
+  #titre h1 {
+    margin-left: 20px;
+    width: 1250px;
+  }
   #menu article {
     margin: 15px;
     display: -webkit-box;
@@ -345,10 +348,6 @@ footer a {
   #menu article #desserts h2 {
     margin: 0px;
     margin-top: -10px;
-  }
-  #menu #titre h1 {
-    margin-left: 20px;
-    width: 1250px;
   }
   #menu #desserts h2 {
     margin: 0px;

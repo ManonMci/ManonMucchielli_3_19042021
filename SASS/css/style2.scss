@@ -42,6 +42,32 @@ html {
         object-fit:contain;
         border-top:white;
     }
+    #titre{
+      background-color:$color-light;
+      display:flex;
+      font-family:"shrikhand", cursive;
+      font-size:1.1em;
+      border-top-left-radius: 20px;
+      border-top-right-radius:20px;
+      position:absolute;
+      margin-top:-80px;
+      width:100%;
+      
+      h1{
+          width:100%;
+          margin-left:10px;
+      }
+      #coeur{
+          display:flex;
+          justify-content:flex-end;
+          align-items:center;
+          width:10px;
+      }
+          .plein{
+          display:none;
+          opacity:0.5;
+          }
+    }
 }
 a{
     width:20px;
@@ -49,35 +75,13 @@ a{
     align-items:center;
     color:black;
   }
+
+
+
 #menu{
     background-color:$color-light;
     width:100%;
-    #titre{
-        background-color:$color-light;
-        display:flex;
-        font-family:"shrikhand", cursive;
-        font-size:1.1em;
-        border-top-left-radius: 20px;
-        border-top-right-radius:20px;
-        position:absolute;
-        margin-top:-80px;
-        width:100%;
-        
-        h1{
-            width:100%;
-            margin-left:10px;
-        }
-        #coeur{
-            display:flex;
-            justify-content:flex-end;
-            align-items:center;
-            width:10px;
-        }
-            .plein{
-            display:none;
-            opacity:0.5;
-            }
-    }
+  }
     article{
         width:100%;
         #entrées{
@@ -163,7 +167,7 @@ a{
             display:none;
         }
     }
-}
+
 #commander {
     height:30px;
     display:flex;
@@ -229,6 +233,12 @@ a{
       max-width:1250px;
       margin:auto;
     }
+    #titre{
+      h1{
+        margin-left:20px;
+        width:1250px;
+      }
+    }
     #menu {
       article{
         margin:15px;
@@ -263,12 +273,7 @@ a{
           }
         }
       }
-      #titre{
-      h1{
-        margin-left:20px;
-        width:1250px;
-      }
-    }
+      
         #desserts h2{
           margin:0px;
         }
@@ -311,7 +316,6 @@ a{
   }
   /* Tablette */
   @media screen and (min-width: 768px) and (max-width: 1023px){
-  
 article{
   margin:30px;
 }
@@ -329,5 +333,5 @@ footer a{
   display:flex;
   justify-content:center;
 }
-  }
+}
 
