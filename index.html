@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <title>Ohmyfood</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="SASS/css/style.css">
+        <link rel="stylesheet" href="SASS/css/animation.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">  
         <meta name="viewport" content="width=device-width, initial-scale1.0">
     </head>
     <body>
+        <div id="loader">
+            <div id="items">
+                <i class="fas fa-spinner spinner-1"></i>
+                <i class="fas fa-spinner spinner-2"></i>
+                <i class="fas fa-spinner spinner-3"></i>
+            </div>
+        </div>
         <div class="container">
             <header>
                 <div id="logo">
@@ -20,8 +28,8 @@
                         <p> <i class="fas fa-map-marker-alt"> </i> Paris, Belleville</p>
                     </div>
                     <div id="titres">
-                    <h1>Réservez le menu qui vous convient</h1>
-                    <p>Découvrez des restaurants d'exception, seléctionnés par nos soins.</p>
+                        <h1>Réservez le menu qui vous convient</h1>
+                        <p>Découvrez des restaurants d'exception, seléctionnés par nos soins.</p>
                     <div id="explorer">
                         Explorer nos restaurants
                     </div>
@@ -31,9 +39,9 @@
                     <h2>Fonctionnement</h2>
                     <nav>
                         <ul>
-                            <li><p>1</p><div class="symbole"><i class="fas fa-mobile-alt"></div></i>Choisissez un restaurant</li>
-                            <li><p>2</p><div class="symbole"><i class="fas fa-list-ul"></div></i>Composez votre menu</li>
-                            <li><p>3</p><div class="symbole"><i class="fas fa-store"></div></i>Dégustez au restaurant</li>
+                            <li><p>1</p><div class="symbole"><i class="fas fa-mobile-alt"></i></div>Choisissez un restaurant</li>
+                            <li><p>2</p><div class="symbole"><i class="fas fa-list-ul"></i></div>Composez votre menu</li>
+                            <li><p>3</p><div class="symbole"><i class="fas fa-store"></i></div>Dégustez au restaurant</li>
                         </ul>
                     </nav>
                 </div>
@@ -43,11 +51,9 @@
                     <article>
                         <h2>Restaurants</h2>
                         <figure>
-                            <a href="Menus/la-palette-du-gout.html">
+                            <a href="la-palette-du-gout.html">
                                 <img class="cover" src="images/lapalettedugout.jpg" alt="plat du menu la palette du goût"/>
-                                <div class="nouveau">
-                                    <p>Nouveau</p>
-                                </div>
+                                <span class="nouveau">Nouveau</span>
                             </a>
                             <figcaption>
                                 <div class="description2">
@@ -56,16 +62,14 @@
                                 </div>
                                 <div class="coeur">
                                     <i class="far fa-heart vide"></i>
-                                    <i class="far fa-heart plein"></i>
+                                    <i class="fas fa-heart plein"></i>
                                 </div>    
                             </figcaption>
                         </figure>
                         <figure>
-                            <a href="Menus/la-note-enchantee.html">
+                            <a href="la-note-enchantee.html">
                                 <img class="cover" src="images/lanoteenchantee.jpg" alt="plat du menu la note enchantée"/>
-                                <div class="nouveau">
-                                    <p>Nouveau</p>
-                                </div>
+                                <span class="nouveau">Nouveau</span>
                             </a>
                             <figcaption>
                                 <div class="description2">
@@ -74,12 +78,12 @@
                                 </div>
                                 <div class="coeur">
                                     <i class="far fa-heart vide"></i>
-                                    <i class="far fa-heart plein"></i>
+                                    <i class="fas fa-heart plein"></i>
                                 </div>
                             </figcaption>
                         </figure>
                         <figure>
-                            <a href="Menus/a-la-francaise.html">
+                            <a href="a-la-francaise.html">
                                 <img class="cover" src="images/alafrançaise.jpg" alt="plat du menu à la française"/>
                             </a>
                             <figcaption>
@@ -89,13 +93,13 @@
                                 </div>
                                 <div class="coeur">
                                     <i class="far fa-heart vide"></i>
-                                    <i class="far fa-heart plein"></i>
+                                    <i class="fas fa-heart plein"></i>
                                 </div>
                             </figcaption>
                         </figure>
                         <figure>
-                            <a href="Menus/le-delice-des-sens.html">
-                                <img class="cover" src="images/ledélicedessens.jpg" alt="plat du menu le délice des sens"/>
+                            <a href="le-delice-des-sens.html">
+                                <img class="cover" src="images/ledelicedessens.jpg" alt="plat du menu le délice des sens"/>
                             </a>
                             <figcaption>
                                 <div class="description2">
@@ -104,7 +108,7 @@
                                 </div>
                                 <div class="coeur">
                                     <i class="far fa-heart vide"></i>
-                                    <i class="far fa-heart plein"></i>
+                                    <i class="fas fa-heart plein"></i>
                                 </div>
                             </figcaption>
                         </figure>
