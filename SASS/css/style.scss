@@ -15,6 +15,71 @@ html {
     margin:0;
   }
 }
+#loader{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color: $color-light;
+  animation: opacite 8s;
+  animation-fill-mode:both;
+  animation-iteration-count:1;
+  z-index:1;
+  display:block;
+
+      #items{
+          font-size:2em;
+          height:100%;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+         
+          .spinner-1{
+              color:$primaire;
+              font-size:40px;
+              animation: rotation 4s;
+              margin-right:15px;
+              
+          }
+          .spinner-2{
+              color:$secondaire;
+              font-size:40px;
+              animation: rotation 4s;
+              margin-right:15px;
+          }
+          .spinner-3{
+              color:$tertiaire;
+              font-size:40px;
+              animation: rotation 4s;
+          }
+      }
+      #logoloader{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:160px;
+        position:absolute;
+        top:10em;
+      }
+  }
+  
+  @keyframes opacite{
+      from{
+          opacity:1;
+          background-color:$color-medium;
+      }
+      to{
+          opacity:0;
+          width:0%;
+      }
+  }
+  @keyframes rotation{
+      from{
+          transform:rotate(0deg);
+      }
+      to{
+          transform:rotate(360deg);
+      }
+  }
 header{
   width:100%;
   display:flex;
@@ -92,6 +157,12 @@ header{
       ul{
         width:100%;
       }
+      li:hover{
+        background-color: rgb(241, 231, 255);
+        .symbole{
+          color: $primaire;
+        }
+      }
         .symbole{
           color:rgb(131,131,131);
           margin-left:15px;
@@ -111,6 +182,7 @@ header{
           width:100%;
           padding-top:5px
         }
+
         ul li p{
           background-color: $primaire;
           border:3px solid $primaire;
@@ -149,6 +221,7 @@ header{
       margin-bottom:20px;
       margin:10px;
       position:relative;
+      display:block;
     }
     figure a {
       text-decoration:none;
@@ -190,12 +263,12 @@ figcaption{
   box-shadow:4px 2px 2px $color-medium;
   margin-top:-3px; 
   h3{
-    font-size:0.8em;
+    font-size:0.9em;
     font-weight:bold;
   }
   p{
-    font-size:0.7em;
-    margin-top:-9px;
+    font-size:0.8em;
+    margin-top:-12px;
   }
   .description2 {
     display:flex;
@@ -211,11 +284,29 @@ figcaption{
       justify-content:flex-end;
       margin-top:10px;
       margin-right:10px;
+      font-size:1.1em;
     }
     .plein{
-      display:none;
-      opacity:0.5;
+      opacity:0;
     }
+    .vide:hover{
+      font-weight:bold;
+      background:linear-gradient($primaire 10%,$secondaire 30%);
+      background-clip:text;
+      color:transparent;
+      animation:remplissage 2s;
+
+      @keyframes remplissage{
+        from{
+          opacity:0;
+        }
+        to{
+          opacity:1;
+        }
+      }
+    }
+   
+
 }
 footer{
     background-color:$color-dark;
