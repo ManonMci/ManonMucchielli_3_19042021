@@ -1,6 +1,6 @@
 # OhMyFood
 
-Troisième projet du parcours développeur web chez OpenClassrooms : "".
+Troisième projet du parcours développeur web chez OpenClassrooms : "Dynamisez une page web avec des animations CSS".
 
 L'objectif est d'intégrer et de dynamiser une page web avec des animations CSS et d'utiliser le préprocesseur Sass.
 
